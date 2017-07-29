@@ -7,6 +7,6 @@ program osgViewer1
 {
     sources
     {
-        ../../Source/main.c
+        ../../Source/main.cpp
     }
 }
