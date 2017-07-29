@@ -3,8 +3,16 @@ toolsets = vs2015 vs2013;
 vs2015.solutionfile = ../VC14/osgViewer1.sln;
 vs2013.solutionfile = ../VC12/osgViewer1.sln;
 
+setting OSG_ROOT
+{
+    help = "Path to the OpenSceneGraph installation";
+    default = '$(OSG)';
+}
+
 program osgViewer1
 {
+    includedirs += $(OSG_ROOT)/include;
+
     sources
     {
         ../../Source/main.cpp
