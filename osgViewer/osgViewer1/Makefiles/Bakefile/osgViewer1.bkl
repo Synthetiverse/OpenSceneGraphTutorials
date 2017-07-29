@@ -1,0 +1,12 @@
+toolsets = vs2015 vs2013;
+
+vs2015.solutionfile = ../VC14/osgViewer1.sln;
+vs2013.solutionfile = ../VC12/osgViewer1.sln;
+
+program osgViewer1
+{
+    sources
+    {
+        ../../Source/main.c
+    }
+}
