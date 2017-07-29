@@ -24,5 +24,7 @@
 
 int main(int argc, char* argv[])
 {
+    osgViewer::Viewer viewer;
+
     return 0;
 }

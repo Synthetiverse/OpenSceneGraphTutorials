@@ -13,6 +13,16 @@ program osgViewer1
 {
     includedirs += $(OSG_ROOT)/include;
 
+    libdirs += $(OSG_ROOT)/lib;
+    if ($(config) == Debug)
+    {
+        libs += osgViewerd;
+    }
+    if ($(config) != Debug)
+    {
+        libs += osgViewer;
+    }
+
     sources
     {
         ../../Source/main.cpp
